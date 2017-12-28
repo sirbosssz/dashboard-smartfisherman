@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:200,300,400');
+
+*{
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    background: #efefef;
+}
+.light{
+    font-weight: 200;
+}
+.top{
+    background: linear-gradient(to right, #00a8e6 10%, #007ce6);
+    color: #fff;
+    padding-top: .2em;
+    padding-bottom: 1em;
+}
+#logo{
+    padding-top: .3em;
+    padding-bottom: .5em;
+    transform: scale(1, 1.15);
+    font-size: 24pt;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.right-details{
+    text-align: right;
+}
+.details span{
+    display: block;
+    font-size: 9pt;
+}
+/*****************************/
+.dashboard{
+    padding-top: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+.dashboard > .container{
+    background: #fff;
+}
+.box{
+    padding: .1em;
+}
+.box-inner{
+    border: 2px solid #00a8e6;
+    border-radius: 5px;
+    text-align: center;
+}
+.box-inner > .head{
+    display: block;
+    font-size: 9pt;
+    font-weight: 600;
+    margin-bottom: .2em;
+    margin-top: .2em;
+}
+.box-inner > .content > span{
+    display: block;
+}
+.box-inner > .content{
+    color: #00a8e6;
+}
+.content table{
+    width: 100%;
+}
+#wind .value{
+    font-size: 14pt;
+}
+#wind .value b{
+    font-size: 30pt;
+    font-weight: 400;
+    line-height: 1em;
+}
+#wind .direction{
+    margin-bottom: 1.5em;
+    font-size: 8pt;
+}
+#tide .label{
+    margin-top: .2em;
+    line-height: 1em;
+    font-size: 8pt;
+}
+#tide .value{
+    font-size: 22pt;
+    line-height: 1em;
+    margin-bottom: .4em;
+}
+#moon .value{
+    margin-top: .3em;
+    font-size: 10pt;
+}
+#moon b{
+    font-size: 30pt;
+    font-weight: 400;
+    line-height: 1em;
+}
+#moon b.second{
+    font-size: 15pt;
+}
+#moon .month{
+    font-size: 10pt;
+    margin-bottom: 1.4em;
+    line-height: 1em;
+}
+#humidity .value, #rain .value{
+    font-size: 26pt;
+    line-height: 1.2em;
+    margin-bottom: .3em;
+}
+#sun .time{
+    font-size: 10pt;
+    margin-bottom: .2em;
+}
+#sun .icon{
+    width: 20px;
+}
+#sun .content{
+    display: block;
+}
+#temp table{
+    margin-top: .5em;
+    font-size: 8pt;
+    margin-bottom: .8em;
+}
+#temp .value{
+    font-size: 40pt;
+    line-height: 1em;
+}
+#temp .sky{
+    font-size: 10pt;
+}
+#wind, #tide, #moon{
+    height: 110px;
+}
+/* tablet */
+@media (min-width: 768px) {
+    #logo{
+        font-size: 30pt;
+    }
+    .details span{
+        font-size: 12pt;
+    }
+    .box{
+        padding: .6em;
+    }
+    .box-inner{
+        border-radius: 15px;
+    }
+    .box-inner > .head{
+        font-size: 12pt;
+    }
+    #wind .value{
+        font-size: 18pt;
+    }
+    #wind .value b{
+        font-size: 35pt;
+    }
+    #wind .direction{
+        font-size: 12pt;
+    }
+    #tide .label{
+        margin-top: .8em;
+        font-size: 12pt;
+    }
+    #tide .value{
+        font-size: 30pt;
+    }
+    #moon .value{
+        font-size: 12pt;
+    }
+    #moon b{
+        font-size: 40pt;
+    }
+    #moon b.second{
+        font-size: 25pt;
+    }
+    #moon .month{
+        font-size: 12pt;
+        margin-top: .4em;
+    }
+    #humidity .value, #rain .value{
+        font-size: 35pt;
+    }
+    #sun .time{
+        display: block;
+        font-size: 16pt;
+    }
+    #sun .icon{
+        width: 34px;
+    }
+    #sun .content{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20%;
+        padding-right: 20%
+    }
+    #temp table{
+        font-size: 10pt;
+    }
+    #temp .value{
+        margin-top: .3em;
+        font-size: 45pt;
+    }
+    #temp .sky{
+        font-size: 20pt;
+    }
+    #wind, #tide, #moon{
+        height: 120px;
+    }
+    #humidity, #rain{
+        height: 100px;
+    }
+    #sun{
+        height: 110px;
+    }
+    #temp{
+        height: calc(100px + 110px + 1.2em);
+    }
+}
+/* desktop */
+@media (min-width: 1200px) {
+    .box-inner > .head{
+        font-size: 14pt;
+    }
+    #wind .value{
+        font-size: 22pt;
+    }
+    #wind .value b{
+        font-size: 50pt;
+    }
+    #wind .direction{
+        font-size: 14pt;
+    }
+    #tide .label{
+        font-size: 14pt;
+    }
+    #tide .value{
+        font-size: 40pt;
+    }
+    #moon .value{
+        font-size: 14pt;
+    }
+    #moon b{
+        font-size: 55pt;
+    }
+    #moon b.second{
+        font-size: 30pt;
+    }
+    #moon .month{
+        font-size: 14pt;
+    }
+    #humidity .value, #rain .value{
+        font-size: 45pt;
+    }
+    #sun .time{
+        display: block;
+        font-size: 24pt;
+    }
+    #sun .icon{
+        width: 40px;
+    }
+    #sun .content{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20%;
+        padding-right: 20%
+    }
+    #temp table{
+        font-size: 12pt;
+    }
+    #temp .value{
+        margin-top: .3em;
+        font-size: 55pt;
+    }
+    #temp .sky{
+        font-size: 25pt;
+    }
+    #wind, #tide, #moon{
+        height: 150px;
+    }
+    #humidity, #rain{
+        height: 120px;
+    }
+    #sun{
+        height: 135px;
+    }
+    #temp{
+        height: calc(120px + 135px + 1.2em);
+    }
+}

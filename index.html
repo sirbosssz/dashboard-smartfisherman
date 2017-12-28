@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Hello, world!</title>
+    <title>Smart Fisherman</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,10 +10,135 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <div class="top">
+        <div class="container">
+            <h1 id="logo">
+                <span class="light">Smart</span> Fisherman</h1>
+            <div class="details">
+                <div class="left-details">
+                    <span>12 มกราคม 2560</span>
+                    <span class="light">วันพฤหัส. ขึ้น 5 ค่ำ เดือนอ้าย (1) ปีระกา</span>
+                </div>
+                <div class="right-details">
+                    <span class="light">ตำแหน่งของคุณ</span>
+                    <span>Lat: 13, Long: 100</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="container">
+            <div class="row">
+                <!-- กระแสลม - ระดับน้ำ - พระจันทร์ -->
+                <div class="col-4 box">
+                    <div class="box-inner" id="wind">
+                        <span class="head">กระแสลม</span>
+                        <div class="content">
+                            <span class="value">
+                                <b>16</b> ม/ชม</span>
+                            <span class="direction">ทิศตะวันออกเฉียงเหนือ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 box">
+                    <div class="box-inner" id="tide">
+                        <span class="head">ระดับน้ำ</span>
+                        <div class="content">
+                            <span class="label">เพิ่มขึ้น</span>
+                            <span class="value">+1.78 เมตร</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 box">
+                    <div class="box-inner" id="moon">
+                        <span class="head">พระจันทร์</span>
+                        <div class="content">
+                            <span class="value">ข้างขึ้น
+                                <b>5</b>
+                                <b class="second">ค่ำ</b>
+                            </span>
+                            <span class="month">เดือนอ้าย (1)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- อุณหภูมิ -->
+                <div class="col-12 col-md-6 box">
+                    <div class="box-inner" id="temp">
+                        <span class="head">อุณหภูมิ</span>
+                        <div class="content">
+                            <span class="value">25-18 ํC</span>
+                            <span class="sky">ท้องฟ้าแจ่มใส</span>
+                            <table>
+                                <tr style="color:black">
+                                    <td>จ</td>
+                                    <td>อ</td>
+                                    <td>พ</td>
+                                    <td style="color: #00a8e6">พฤ</td>
+                                    <td>ศ</td>
+                                    <td>ส</td>
+                                    <td>อา</td>
+                                </tr>
+                                <tr>
+                                    <td>25 ํC</td>
+                                    <td>25 ํC</td>
+                                    <td>25 ํC</td>
+                                    <td>25 ํC</td>
+                                    <td>25 ํC</td>
+                                    <td>25 ํC</td>
+                                    <td>25 ํC</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- ความชื้น - โอกาสฝนตก - พระอาทิตย์ขึ้น-ลง -->
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-3 col-md-6 box">
+                            <div class="box-inner" id="humidity">
+                                <span class="head">ความชื้น</span>
+                                <div class="content">
+                                    <span class="value">82%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 box">
+                            <div class="box-inner" id="rain">
+                                <span class="head">โอกาสฝนตก</span>
+                                <div class="content">
+                                    <span class="value">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col box">
+                            <div class="box-inner" id="sun">
+                                <span class="head">พระอาทิตย์ขึ้น - ลง</span>
+                                <div class="content">
+                                    <div>
+                                        <object id="sunrise" class="icon" data="icon/007-sunrise-weather-symbol.svg" type="image/svg+xml">
+                                        </object>
+                                        <span class="time">06:22 น.</span>
+                                    </div>
+                                    <div>
+                                        <object id="sunrise" class="icon" data="icon/008-sunset.svg" type="image/svg+xml">
+                                        </object>
+                                        <span class="time">17:50 น.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
